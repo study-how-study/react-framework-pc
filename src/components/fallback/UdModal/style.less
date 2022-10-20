@@ -1,0 +1,57 @@
+  .ant-modal-wrap {
+    .modal-content-overflow-scroll {
+      .ant-modal-content {
+        display: flex;
+        flex-direction: column;
+        max-width: calc(100vw - 32px);
+        max-height: calc(100vh - 32px);
+        .ant-modal-body {
+          overflow: auto;
+        }
+      }
+    }
+    .ant-modal {
+      padding-bottom: 0;
+    }
+  }
+
+  .ud-steps-modal {
+    &.ud-steps-modal-horizontal {
+      .ud-steps-modal-step-container {
+        margin-top: 15px;
+      }
+    }
+
+    &.ud-steps-modal-vertical {
+      .ant-modal-body {
+        display: flex;
+
+        .ant-steps-vertical {
+          width: auto;
+        }
+
+        .ud-steps-modal-step-container {
+          flex: 1;
+        }
+      }
+    }
+
+    .ud-steps-modal-step-content.inactive {
+      display: none;
+    }
+  }
+
+  .ud-modal-confirm-wrapper {
+    display: flex;
+    align-items: center;
+
+    .ud-modal-confirm-icon {
+      font-size: 26px;
+      color: #faad14;
+      margin-right: 10px;
+    }
+
+    .ud-modal-confirm-content {
+      font-size: 16px;
+    }
+  }

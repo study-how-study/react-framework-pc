@@ -1,0 +1,21 @@
+import React, { useState } from 'react'
+import { UdForm, UdTimePicker } from '../../../../index'
+
+const Demo = () => {
+  const [values, setValues] = useState('')
+
+  return (
+    <>
+      <UdForm items={[
+        { label: '姓名', name: 'name' },
+        { label: '年龄', name: 'age' },
+        { label: '填表时间', name: 'time', render: <UdTimePicker /> },
+      ]} onFinish={(values) => {
+        setValues(JSON.stringify(values, null, 4))
+      }} />
+      <pre>{values}</pre>
+    </>
+  )
+}
+
+export default Demo

@@ -1,0 +1,116 @@
+.doc-viewer {
+  padding-bottom: 20px;
+  .doc-header {
+    border-bottom: 1px solid #ecedf0;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    display: flex;
+    span {
+      margin-right: 15px;
+      font-weight: 300;
+    }
+    .subtitle {
+      flex: 1;
+    }
+    a {
+      font-size: 14px;
+      font-weight: normal;
+      margin: 20px 10px 0 10px;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 2em;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+
+  li {
+    p {
+      margin: 0;
+    }
+  }
+  code:not([class]) {
+    color: #476582;
+    padding: 0.25rem 0.5rem;
+    margin: 0;
+    font-size: 0.85em;
+    background-color: rgba(27, 31, 35, 0.05);
+    border-radius: 3px;
+  }
+  table:not([style]) {
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #fff;
+    margin-bottom: 15px;
+
+    th {
+      padding: 12px;
+      border-width: 1px 1px 2px 1px;
+      border-style: solid;
+      border-color: #ebedf0;
+      color: #5c6b77;
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
+      background: rgb(250, 250, 250);
+    }
+    td {
+      padding: 12px;
+      border: 1px solid #ebedf0;
+      font-size: 13px;
+    }
+    tbody {
+      tr {
+        transition: all 0.3s;
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.02);
+        }
+      }
+    }
+
+    td:first-child {
+      color: #595959;
+      font-weight: 600;
+    }
+    td:nth-child(4) {
+      color: #c41d7f;
+      font-size: 13px;
+      word-break: break-all;
+    }
+  }
+
+  hr {
+    border: none;
+    margin: 30px 0 25px 0;
+    border-bottom: 1px solid #eaecef;
+  }
+  blockquote {
+    margin: 1em 0;
+    padding-left: 0.8em;
+    color: #697b8c;
+    font-size: 90%;
+    border-left: 4px solid #ebedf0;
+  }
+
+  article > .code-toolbar {
+    margin-bottom: 15px;
+  }
+  .demo-list {
+    .demo-viewer:last-child {
+      margin-bottom: 0;
+    }
+  }
+  pre[class*="language-"] {
+    background-color: #f3f3f3a8;
+    font-size: 12px;
+  }
+
+  .mermaid {
+    overflow: auto;
+  }
+}

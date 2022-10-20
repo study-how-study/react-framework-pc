@@ -1,0 +1,108 @@
+.ud-menu {
+  .ant-menu {
+    font-size: 12px;
+    background-color: transparent;
+
+    &.ant-menu-inline {
+      border-right: none;
+    }
+
+    &:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: #ffffff;
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+    }
+
+    .ant-menu-item {
+      color: #333333;
+      margin: 0;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: all 0.2s;
+
+      &:after {
+        content: none;
+      }
+
+      &:hover {
+        background-color: #f4f6f8;
+        color: #000;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #333;
+      }
+    }
+
+    .ant-menu-submenu > .ant-menu {
+      background-color: transparent;
+    }
+
+    .ant-menu-inline .ant-menu-item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    .ant-menu-sub.ant-menu-inline > .ant-menu-item {
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+      background-color: #ffffff;
+      color: #333;
+
+      &::after {
+        border-right: none;
+        border-color: #ffffff;
+        opacity: 0;
+      }
+    }
+
+    .ant-menu-submenu-title {
+      color: #000;
+      font-size: 12px;
+
+      &:hover {
+        color: #000;
+
+        .ant-menu-submenu-arrow {
+          &::before,
+          &::after {
+            background: @primary-color;
+          }
+        }
+      }
+
+      &:active {
+        background-color: #eaedf1;
+      }
+    }
+  }
+
+  .ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .ant-menu-submenu-active {
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .ant-menu-submenu-inline {
+    transition: none;
+  }
+
+  .ant-menu-submenu-selected {
+    color: #333;
+  }
+}

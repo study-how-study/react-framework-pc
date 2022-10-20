@@ -1,0 +1,28 @@
+.anchor-bar {
+  background-color: #fff;
+  border-left: 1px solid #ecedf0;
+  position: fixed;
+  right: 20px;
+  top: 82px;
+  z-index: 1;
+  p {
+    margin: 0;
+    width: 100px;
+    padding: 2px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    border-left: 1px solid transparent;
+    box-sizing: content-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all 0.5s;
+    &.active {
+      border-left: 1px solid var(--primary-color, #1890ff);
+      color: var(--primary-color, #1890ff);
+    }
+  }
+  .child-tag {
+    padding-left: 20px;
+  }
+}

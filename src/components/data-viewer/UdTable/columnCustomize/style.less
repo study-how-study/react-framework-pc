@@ -1,0 +1,56 @@
+.ud-new-table-column-customize {
+  .ant-modal-body {
+    display: flex;
+    overflow: hidden;
+    .ant-spin {
+      padding: 100px 0;
+    }
+  }
+
+  .ud-new-table-column-customize-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: -14px;
+    overflow: hidden;
+    .left-items,
+    .right-items {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      max-height: 30%;
+      overflow: auto;
+    }
+    .middle-items {
+      flex: 1;
+      overflow: auto;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #f0f0f0;
+      min-height: 45px;
+    }
+    .anticon-drag {
+      margin-right: 10px;
+      cursor: move;
+    }
+    .ant-checkbox-wrapper {
+      width: 240px;
+    }
+    .width-setting {
+      display: flex;
+      .ant-input-number {
+        margin-left: 10px;
+        width: 80px;
+      }
+    }
+  }
+  .setting-area {
+    display: flex;
+  }
+  .fixed-setting {
+    margin-right: 20px;
+  }
+}

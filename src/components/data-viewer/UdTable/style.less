@@ -1,0 +1,105 @@
+@import "./columnCustomize/style.less";
+
+.ud-table-wrapper {
+  .ant-table {
+    table {
+      table-layout: inherit !important;
+    }
+
+    .ant-table-header {
+      table {
+        table-layout: fixed !important;
+      }
+    }
+
+    .ant-table-content,
+    .ant-table-body {
+      overflow: auto;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    thead th {
+      white-space: nowrap;
+
+      sup {
+        color: red;
+        left: 0.3em;
+        top: -0.8em;
+      }
+    }
+
+    tbody td {
+      white-space: nowrap;
+
+      .edit-table-custom-field-errro-tips {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .ant-table-has-fix-left,
+    .ant-table-has-fix-right {
+      table {
+        table-layout: auto !important;
+      }
+    }
+
+    .ant-table-column-sorters {
+      padding: 0;
+    }
+
+    .td-operate {
+      a {
+        margin: 0 5px;
+      }
+
+      a:first-child {
+        margin-left: 0;
+      }
+
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .text-overflow {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .ud-table-form {
+    .ant-table.ant-table-small tbody>tr>td {
+      padding: 6px 8px;
+    }
+
+    .ant-table tbody>tr {
+      td {
+        padding: 22px 16px;
+
+        .ant-form-item {
+          position: relative;
+          margin-bottom: 0;
+        }
+
+        .ant-form-item-explain {
+          position: absolute;
+          bottom: -24px;
+          font-size: 12px;
+          // min-height: unset;
+        }
+      }
+
+      .hidde-default-error {
+        .ant-form-item-explain {
+          visibility: hidden;
+        }
+      }
+      .custom-error-active {
+        background: rgba(255, 0, 0, 0.1);
+      }
+    }
+  }
+}

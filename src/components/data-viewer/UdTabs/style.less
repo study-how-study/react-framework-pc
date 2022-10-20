@@ -1,0 +1,35 @@
+.ud-tabs-wrapper {
+  display: flex;
+  > .ant-tabs {
+    display: flex;
+    flex: 1;
+    .ant-tabs-content-holder {
+      display: flex;
+      flex: 1;
+    }
+    .ant-tabs-tabpane {
+      padding: 10px;
+    }
+    .ud-tabs-tabpane-senior {
+    }
+    .ud-tabs-tabpane-senior-btns {
+      margin-left: 4px;
+      margin-right: -8px;
+      .anticon {
+        margin-left: 6px;
+        margin-right: 0;
+        color: rgba(0, 0, 0, 0.45);
+        transition: color 0.3s;
+        &:hover {
+          color: rgba(0, 0, 0, 0.85);
+        }
+      }
+    }
+    .ant-tabs-tab-with-remove {
+      padding-right: 10px;
+    }
+    .ant-tabs-tab-remove {
+      margin-left: 0;
+    }
+  }
+}
